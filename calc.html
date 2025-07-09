@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="head">
+    <input type="text" id="val" >
+        <div class="calc">
+        <div id="one" onclick="display('+')" class="cal">+</div>
+        <div id="two" onclick="display(7)" class="cal">7</div>
+        
+        <div id="three" onclick="display(8)"class="cal">8</div>
+        <div id="four" onclick="display(9)" class="cal">9</div>
+        <div id="one" onclick="display('-')"class="cal">-</div>
+        <div id="six" onclick="display(4)"class="cal">4</div>
+        <div id="seven" onclick="display(5)"class="cal">5</div>
+        <div id="eight" onclick="display(6)"class="cal">6</div>
+        <div id="one" onclick="display('*')"class="cal">*</div>
+        <div id="zero" onclick="display(1)"class="cal">1</div>
+        <div id="esc" class="cal" onclick="display(2)">2</div>
+        <div id="del" class="cal" onclick="display(3)">3</div>
+        <div id="one" onclick="display('/')" class="cal">/</div>
+        <div id="add" onclick="display(0)" class="cal">0</div>
+        <div id="add" onclick="display('.')" class="cal">.</div>
+        <div id="add" onclick="add()" class="cal">=</div>
+        <div id="one" onclick="dis()" class="cal">C</div>
+
+
+        </div>
+    </div>
+<script>
+    var tot= document.getElementById("val");
+    tot.addEventListener("keypress",(e)=>{
+        if(e.key==="Enter"){
+            return add()
+        }
+
+    })
+    function display(nu){
+        tot.value+= nu;
+    }
+    function add(){
+        try{
+        tot.value=eval(tot.value)
+        }
+        catch(e){
+            alert("error")
+        }
+        
+    }
+    function dis(){
+        tot.value=""
+    }
+    const enter=(e)=>{
+        if(e.key==="Enter"){
+            tol.val=eva
+            l(tot.value)
+        }
+
+    }
+
+</script>
+  
+
+
+    
+    
+</body>
+</html>
