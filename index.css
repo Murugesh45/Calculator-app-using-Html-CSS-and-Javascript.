@@ -75,18 +75,20 @@ body {
 
 @media (max-width: 480px) {
   .head {
-    padding: 15px;
-    width: 100%;
+    padding: 20px;
+    width: 75vw;
   }
 
   #val {
     font-size: 1.5rem;
     height: 50px;
+    border: 2px solid blue;
   }
 
   .cal {
     padding: 15px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    
   }
 }
 
