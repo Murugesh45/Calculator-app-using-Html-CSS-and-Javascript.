@@ -8,7 +8,9 @@
 
 
 body {
-  background: linear-gradient(#74ebd5, #9face6);
+  background-image: url(https://www.shutterstock.com/shutterstock/videos/3455238317/thumb/1.jpg?ip=x480);
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +22,7 @@ body {
   background: rgba(255, 255, 255, 0.15);
   
   border-radius: 20px;
-  box-shadow: 0 0px 10px gray;
+  box-shadow: 0 0px 20px gray;
   padding: 20px;
   width: 320px;
   
@@ -35,7 +37,7 @@ body {
   padding: 10px;
   border: none;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.3);
+  background:white;
   color: black;
   margin-bottom: 20px;
   outline: none;
